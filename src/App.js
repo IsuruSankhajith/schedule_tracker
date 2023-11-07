@@ -1,22 +1,18 @@
-// import React from "react";
-import Header from "./components/Header";
-
+import React from 'react';
+import Header from './components/Header';
+import Tasks from './components/Tasks';
+import AddTask from './components/AddTask';
 
 function App() {
+  const title = 'Task Tracker'; // Set your application title here
+
   return (
     <div className="container">
-      <Header> 
-      
-      </Header>
+      <Header title={title} />
+      <AddTask />
+      <Tasks />
     </div>
   );
 }
-
-// class App extends React.Component{
-//   render(){
-//     return <h1> Hello world</h1>
-
-//   }
-// }
 
 export default App;
